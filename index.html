@@ -5,12 +5,12 @@
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="./files/favicon.ico" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="main.css">
+		<link type="text/css" rel="stylesheet" href="./files/main.css">
 	</head>
 
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> Particules - starting with simple stuff<br/>
+			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> project - Via Gorizia<br/>
 			other projects : <a href="https://github.com/tomsail" target="_blank" rel="noopener">tomsail</a>
 		</div>
 
@@ -46,14 +46,14 @@
 				// Textures
 
 				const loader = new THREE.CubeTextureLoader();
-				// loader.setPath( 'textures/cube/Bridge2/' );
+				loader.setPath( 'images/' );
 
 				textureCube = loader.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
 				textureCube.encoding = THREE.sRGBEncoding;
 
 				const textureLoader = new THREE.TextureLoader();
 
-				textureEquirec = textureLoader.load( 'via_gorizia.jpg' );
+				textureEquirec = textureLoader.load( 'images/via_gorizia.jpg' );
 				textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
 				textureEquirec.encoding = THREE.sRGBEncoding;
 
